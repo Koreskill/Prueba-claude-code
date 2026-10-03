@@ -30,7 +30,12 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "render:01": "scripts/render.sh 01 lowerthird 9x16 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 16x9 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 4x5 v1 datos/01-lower-third.ejemplo.json",
-    "render:02": "scripts/render.sh 02 precio 9x16 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 16x9 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 4x5 v1 datos/02-precio.tambor.json && scripts/render.sh 02 preciocontador 9x16 v1 datos/02-precio.contador.json precio && scripts/render.sh 02 preciorebaja 9x16 v1 datos/02-precio.rebaja.json precio"
+    "render:02": "scripts/render.sh 02 precio 9x16 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 16x9 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 4x5 v1 datos/02-precio.tambor.json && scripts/render.sh 02 preciocontador 9x16 v1 datos/02-precio.contador.json precio && scripts/render.sh 02 preciorebaja 9x16 v1 datos/02-precio.rebaja.json precio",
+    "render:03": "scripts/render.sh 03 ficha 9x16 v1 datos/03-ficha.ejemplo.json && scripts/render.sh 03 ficha 16x9 v1 datos/03-ficha.ejemplo.json && scripts/render.sh 03 ficha 4x5 v1 datos/03-ficha.ejemplo.json",
+    "render:04": "scripts/render.sh 04 plano 9x16 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 plano 16x9 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 plano 4x5 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 planoportada 9x16 v1 datos/04-plano.portada.json plano && scripts/render.sh 04 planoportada 16x9 v1 datos/04-plano.portada.json plano",
+    "render:05": "scripts/render.sh 05 cotas 9x16 v1 datos/05-cotas.ejemplo.json && scripts/render.sh 05 cotas 16x9 v1 datos/05-cotas.ejemplo.json && scripts/render.sh 05 cotas 4x5 v1 datos/05-cotas.ejemplo.json",
+    "render:06": "scripts/render.sh 06 etiqueta 9x16 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiqueta 16x9 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiqueta 4x5 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiquetasinlinea 9x16 v1 datos/06-etiqueta.sinlinea.json etiqueta",
+    "render:07": "scripts/render.sh 07 pines 9x16 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 16x9 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 4x5 v1 datos/07-pines.ejemplo.json"
   },
   "sideEffects": [
     "*.css"

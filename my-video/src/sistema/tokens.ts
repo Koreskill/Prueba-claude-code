@@ -58,3 +58,13 @@ export const INTERLINEADO_TITULO = 1.05;
 // Tiempo mínimo de lectura: 0,8 s + 0,35 s por palabra.
 export const tiempoLectura = (texto: string) =>
   0.8 + 0.35 * texto.trim().split(/\s+/).filter(Boolean).length;
+
+// Estilo de panel sobre video (navy 78 % + desenfoque 16 px).
+// Con alfa el desenfoque no se hornea: hay que aplicarlo en el editor.
+export const estiloPanel = (radio: number = PANEL.radio) =>
+  ({
+    background: PANEL.fondo,
+    backdropFilter: `blur(${PANEL.desenfoque}px)`,
+    WebkitBackdropFilter: `blur(${PANEL.desenfoque}px)`,
+    borderRadius: radio,
+  }) as const;

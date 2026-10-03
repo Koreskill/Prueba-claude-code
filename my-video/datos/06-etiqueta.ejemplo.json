@@ -1,0 +1,8 @@
+{
+  "AMBIENTE": "Cocina",
+  "M2": "12",
+  "direccion": "arribaDerecha",
+  "conLinea": true,
+  "duracion": 2.5,
+  "fondoPreview": "transparente"
+}
