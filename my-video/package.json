@@ -29,7 +29,8 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render:01": "scripts/render.sh 01 lowerthird 9x16 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 16x9 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 4x5 v1 datos/01-lower-third.ejemplo.json"
+    "render:01": "scripts/render.sh 01 lowerthird 9x16 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 16x9 v1 datos/01-lower-third.ejemplo.json && scripts/render.sh 01 lowerthird 4x5 v1 datos/01-lower-third.ejemplo.json",
+    "render:02": "scripts/render.sh 02 precio 9x16 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 16x9 v1 datos/02-precio.tambor.json && scripts/render.sh 02 precio 4x5 v1 datos/02-precio.tambor.json && scripts/render.sh 02 preciocontador 9x16 v1 datos/02-precio.contador.json precio && scripts/render.sh 02 preciorebaja 9x16 v1 datos/02-precio.rebaja.json precio"
   },
   "sideEffects": [
     "*.css"

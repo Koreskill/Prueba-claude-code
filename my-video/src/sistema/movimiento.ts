@@ -17,3 +17,15 @@ export const tramo = (
 
 export const mezcla = (p: number, desde: number, hasta: number) =>
   desde + (hasta - desde) * p;
+
+// Ventana de salida que termina justo en el último fotograma
+// (una pieza de 4 s a 30 fps no tiene fotograma en 4,00 s).
+export const ventanaSalida = (
+  durationInFrames: number,
+  fps: number,
+  duracion = 0.3,
+) => {
+  const fin = (durationInFrames - 1) / fps;
+  const real = duracion - 1 / fps;
+  return { inicio: fin - real, duracion: real };
+};
