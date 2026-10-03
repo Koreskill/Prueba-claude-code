@@ -15,6 +15,7 @@ export const fuentesListas = Promise.all([
   cargar(FUENTE.titulo, "montserrat-latin-600-normal.woff2", "600"),
   cargar(FUENTE.titulo, "montserrat-latin-700-normal.woff2", "700"),
   cargar(FUENTE.dato, "inter-latin-500-normal.woff2", "500"),
+  cargar(FUENTE.dato, "inter-latin-600-normal.woff2", "600"),
   cargar(FUENTE.dato, "inter-latin-700-normal.woff2", "700"),
   cargar(FUENTE.serif, "playfair-display-latin-700-normal.woff2", "700"),
 ]);

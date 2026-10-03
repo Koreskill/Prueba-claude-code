@@ -10,6 +10,8 @@
     "@remotion/fonts": "^4.0.532",
     "@remotion/layout-utils": "^4.0.532",
     "@remotion/tailwind-v4": "4.0.532",
+    "@types/qrcode": "^1.5.6",
+    "qrcode": "^1.5.4",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.532",
@@ -35,7 +37,15 @@
     "render:04": "scripts/render.sh 04 plano 9x16 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 plano 16x9 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 plano 4x5 v1 datos/04-plano.ejemplo.json && scripts/render.sh 04 planoportada 9x16 v1 datos/04-plano.portada.json plano && scripts/render.sh 04 planoportada 16x9 v1 datos/04-plano.portada.json plano",
     "render:05": "scripts/render.sh 05 cotas 9x16 v1 datos/05-cotas.ejemplo.json && scripts/render.sh 05 cotas 16x9 v1 datos/05-cotas.ejemplo.json && scripts/render.sh 05 cotas 4x5 v1 datos/05-cotas.ejemplo.json",
     "render:06": "scripts/render.sh 06 etiqueta 9x16 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiqueta 16x9 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiqueta 4x5 v1 datos/06-etiqueta.ejemplo.json && scripts/render.sh 06 etiquetasinlinea 9x16 v1 datos/06-etiqueta.sinlinea.json etiqueta",
-    "render:07": "scripts/render.sh 07 pines 9x16 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 16x9 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 4x5 v1 datos/07-pines.ejemplo.json"
+    "render:07": "scripts/render.sh 07 pines 9x16 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 16x9 v1 datos/07-pines.ejemplo.json && scripts/render.sh 07 pines 4x5 v1 datos/07-pines.ejemplo.json",
+    "render:08": "scripts/render.sh 08 mapa 9x16 v1 datos/08-mapa.ejemplo.json",
+    "render:09": "scripts/render.sh 09 estado 9x16 v1 datos/09-estado.ejemplo.json",
+    "render:10": "scripts/render.sh 10 progreso 9x16 v1 datos/10-progreso.ejemplo.json",
+    "render:11": "scripts/render.sh 11 amenities 9x16 v1 datos/11-amenities.ejemplo.json",
+    "render:12": "scripts/render.sh 12 antesdespues 9x16 v1 datos/12-antesdespues.ejemplo.json && scripts/render.sh 12 antesdespuesmascara 9x16 v1 datos/12-antesdespues.mascara.json antesdespues",
+    "render:13": "scripts/render.sh 13 sol 9x16 v1 datos/13-sol.ejemplo.json && scripts/render.sh 13 soltinte 9x16 v1 datos/13-sol.tinte.json sol",
+    "render:14": "scripts/render.sh 14 contacto 9x16 v1 datos/14-contacto.ejemplo.json",
+    "render:15": "scripts/render.sh 15 transicion 9x16 v1 datos/15-transicion.ejemplo.json"
   },
   "sideEffects": [
     "*.css"

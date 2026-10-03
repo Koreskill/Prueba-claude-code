@@ -1,0 +1,28 @@
+{
+  "ambientes": [
+    {
+      "AMBIENTE": "Living",
+      "segundos": 6
+    },
+    {
+      "AMBIENTE": "Cocina",
+      "segundos": 5
+    },
+    {
+      "AMBIENTE": "Suite",
+      "segundos": 6
+    },
+    {
+      "AMBIENTE": "Baño",
+      "segundos": 3
+    },
+    {
+      "AMBIENTE": "Dormitorio",
+      "segundos": 4
+    },
+    {
+      "AMBIENTE": "Balcón",
+      "segundos": 6
+    }
+  ]
+}

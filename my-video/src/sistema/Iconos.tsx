@@ -20,6 +20,24 @@ const TRAZOS: Record<NombreIcono, string[]> = {
     "M19 37 L37 19",
     "M29 19 h8 v8 M19 29 v8 h8",
   ],
+  subte: [
+    "M14 8 h28 a6 6 0 0 1 6 6 v22 a6 6 0 0 1 -6 6 H14 a6 6 0 0 1 -6 -6 V14 a6 6 0 0 1 6 -6 z",
+    "M8 26 H48",
+    "M18 34 h2 M36 34 h2",
+    "M18 42 l-6 8 M38 42 l6 8",
+  ],
+  escuela: [
+    "M4 22 L28 10 L52 22 L28 34 z",
+    "M14 27 v12 c0 4 6 7 14 7 s14 -3 14 -7 v-12",
+    "M52 22 v14",
+  ],
+  parque: [
+    "M28 8 a12 12 0 0 1 12 12 a10 10 0 0 1 -4 18 H20 a10 10 0 0 1 -4 -18 a12 12 0 0 1 12 -12 z",
+    "M28 26 V50",
+    "M20 50 H36",
+  ],
+  comercio: ["M10 18 H46 L43 48 H13 z", "M20 24 V16 a8 8 0 0 1 16 0 v8"],
+  tilde: ["M14 29 L24 39 L42 19"],
   auto: [
     "M8 36 v-8 l5 -11 a4 4 0 0 1 4 -3 h22 a4 4 0 0 1 4 3 l5 11 v8 a2 2 0 0 1 -2 2 H10 a2 2 0 0 1 -2 -2 z",
     "M11 28 H45",
@@ -28,21 +46,32 @@ const TRAZOS: Record<NombreIcono, string[]> = {
   ],
 };
 
-export type NombreIcono = "cama" | "banera" | "superficie" | "auto";
+export type NombreIcono =
+  | "cama"
+  | "banera"
+  | "superficie"
+  | "auto"
+  | "subte"
+  | "escuela"
+  | "parque"
+  | "comercio"
+  | "tilde";
 
 export const Icono: React.FC<{
   nombre: NombreIcono;
   tamano: number;
   progreso: number;
   color?: string;
-}> = ({ nombre, tamano, progreso, color = COLOR.crema }) => (
+  // Grosor en px de pantalla (no escala con el tamaño del ícono).
+  grosor?: number;
+}> = ({ nombre, tamano, progreso, color = COLOR.crema, grosor = 4 }) => (
   <svg
     width={tamano}
     height={tamano}
     viewBox="0 0 56 56"
     fill="none"
     stroke={color}
-    strokeWidth={4}
+    strokeWidth={grosor}
     strokeLinecap="round"
     strokeLinejoin="round"
     style={{ flexShrink: 0, overflow: "visible" }}
