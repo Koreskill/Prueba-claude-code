@@ -1,0 +1,10 @@
+{
+  "TIPO": "Departamento",
+  "BARRIO": "Palermo",
+  "DIRECCION": "Av. Santa Fe 1234, 3° B",
+  "PRECIO": "USD 185.000",
+  "conPanel": true,
+  "precioSerif": false,
+  "duracion": 4,
+  "fondoPreview": "transparente"
+}
